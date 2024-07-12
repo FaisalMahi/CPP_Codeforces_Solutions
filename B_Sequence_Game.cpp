@@ -1,50 +1,37 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    int test; cin>>test;
-    while(test--)
+    int test;
+    cin >> test;
+    while (test--)
     {
-    int n,flag=0,flag1=0; cin>>n;
-    int ar[n];
-    for(int i =0;i<n;i++)
-    {
-        cin>>ar[i];
-    }
-    for(int i =0;i<n-1;i++)
-    {
-        if(ar[i]+1!=ar[i+1])
+        int n;
+        cin >> n;
+        vector<int> ar(n), res;
+        for (int i = 0; i < n; i++)
         {
-            flag=1;
-            break;
+            cin >> ar[i];
         }
-    }
-    for(int i =0;i<n-1;i++)
-    {
-        if(ar[i]!=ar[i+1])
+        res.push_back(ar[0]);
+        for (int i = 1; i < n; i++)
         {
-            flag1=1;
-            break;
+            if (ar[i - 1] > ar[i])
+            {
+                res.push_back(ar[i]);
+                res.push_back(ar[i]);
+            }
+            else
+            {
+                res.push_back(ar[i]);
+            }
         }
-    }
-    if((flag==0)||flag1==0)
-    {
-        cout<<n<<endl;
-        for(int i =0;i<n;i++)
+        cout << res.size() << endl;
+        for (int i = 0; i < res.size(); i++)
         {
-            cout<<ar[i]<<" ";
+            cout << res[i] << " ";
         }
-        cout<<endl;
-    }
-    else 
-    {
-        cout<<n+1<<endl;
-        for(int i =0;i<n;i++)
-        {
-            cout<<ar[i]<<" ";
-        }
-        cout<<ar[n-1]<<endl;
+        cout << endl;
     }
     return 0;
-    }
 }
