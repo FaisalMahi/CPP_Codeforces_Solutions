@@ -22,6 +22,7 @@ int main()
                     cout << i << endl;
                     break;
                 }
+                
             }
         }
     }
