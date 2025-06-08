@@ -64,7 +64,7 @@ This repo includes problems related to:
 ## 🤝 Connect with Me
 
 - 🔗 GitHub: [FaisalMahi](https://github.com/FaisalMahi)
-- 📧 Email: faisalmahi07@gmail.com
+- 📧 Email: faisalibnaziz39@gmail.com
 - 💼 LinkedIn: [Khondaker Faisal Ibn Aziz](https://www.linkedin.com/in/khondakerfaisalibnaziz/)
 - 💬 Codeforces: [FaisalMahi](https://codeforces.com/profile/FaisalMahi)
 
